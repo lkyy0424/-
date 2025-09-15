@@ -17,4 +17,10 @@ public interface EmployeeService {
 
     void save(EmployeeDTO employeeDTO);
     PageResult page(EmployeePageQueryDTO employeePageQueryDTO);
+
+    void startstop(Integer status, Long id);
+
+    Employee getById(Long id);
+
+    void update(EmployeeDTO employeeDTO);
 }
